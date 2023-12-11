@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Booked Bus Ticket</title>
+  <link rel="icon" type="image/x-icon" href="confirmation.png">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .ticket {
+      background: white;
+      border-radius: 20px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(255, 196, 0);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      color: #000000;
+      padding: 50px;
+      width: 800px;
+      text-align: center;
+    }
+
+    .bus-image {
+      max-width: 120px;
+      margin-bottom: 30px;
+    }
+
+    .ticket h2 {
+      font-size: 40px;
+      margin: 0;
+      padding-bottom: 20px;
+      color: rgb(255, 196, 0);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .ticket p {
+      margin: 15px 0;
+      font-size: larger;
+    }
+
+    .ticket strong {
+      font-weight: bold;
+    }
+
+    @keyframes floating {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .bus-image {
+      animation: floating 2.5s infinite;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ticket" style="text-align: center;">
+    <img class="bus-image" src="confirmation.png" style="position: absolute;margin-top: -80px;" width="70px" alt="">
+    <h2> E-Ticket [Coimbatore-Chennai]</h2>
+    <hr color="orange" style="margin-bottom: 30px;">
+    <div style="display: flex;">
+      <div style="border-right-style: solid;border-right-width: 1px ;border-right-color: lightgrey;">
+        <img src="bus.png" style="width: 400px;">
+      </div>
+      <div style="margin-left: 20px;">
+        <p><strong>Passenger Name: </strong> Lokesh</p>
+        <p><strong>Departure: </strong> Coimbatore</p>
+        <p><strong>Destination: </strong> Chennai</p>
+        <p><strong>Date: </strong> August 24, 2023</p>
+        <p><strong>Departure Time: </strong> 8:00 AM</p>
+        <p><strong>Seat Number: </strong> 15B</p>
+        <p><strong>Confirmation Number: </strong> ABC123DEF</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
